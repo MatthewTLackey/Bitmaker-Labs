@@ -1,0 +1,33 @@
+counter = 1
+
+for counter in 1..100
+	if counter%5==0 && counter%3==0
+		puts "Bitmaker Labs"
+
+	elsif counter%3==0
+		puts "Bitmaker"
+	elsif counter%5==0
+		puts "Labs"
+	else
+		puts counter
+	end
+
+end
+
+
+#another way?
+=begin
+for counter in 1..100
+	if counter%3!=0 && counter%5!=0
+		puts counter
+	elsif counter%3==0 && counter%5==0
+		puts "Bitmaker Labs"
+	elsif counter%3==0 && counter%5!=0
+		puts "Bitmaker"
+	elsif counter%3!=0 && counter%5==0
+		puts "Labs"
+	else
+		puts "We have a problem."
+	end
+end
+=end
